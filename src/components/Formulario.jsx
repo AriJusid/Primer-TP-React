@@ -1,11 +1,12 @@
 import React from "react";
 import './Form.css'
+import Button from "./Button";
 
 function Formulario () {
 
     return(
         <>  
-            <div class="one-half column">
+            <div className="one-half column">
 
             <form>
             <h2>Crear mi Cita</h2>
@@ -14,7 +15,7 @@ function Formulario () {
                 <label>Fecha</label><input type="date" name="fecha" className="u-full-width" id = "date"/>
                 <label>Hora</label><input type="time" name="hora" className="u-full-width" id ="time"/>
                 <label>Sintomas</label><textarea name="sintomas" className="u-full-width" id ="sintomas"></textarea>
-                <button type="submit" className="u-full-width button-primary" id="btnAgregar">Agregar Cita</button>
+                <Button/>
             </form>
             </div>
 
